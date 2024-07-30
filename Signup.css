@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+}
+
+.sidebar .logo {
+  position: relative;
+  margin-top: 35px;
+  margin-left: 38px;
+  /* height: 20px; */
+}
+h2 {
+  color: #ffff;
+  margin-top: 10px;
+  margin-left: 500px;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+.box {
+  background-color: #121212;
+  height: 100vh;
+  width: 500px;
+  position: relative;
+  margin-left: 470px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.box p {
+  color: #ffff;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: 8px;
+}
+input[type="text"] {
+  width: 290px;
+  height: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #121212;
+  border: 1px solid gray;
+  border-radius: 6px;
+  color: grey;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.box h4 {
+  color: #1ed760;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-left: 7px;
+}
+.next {
+  background-color: #1fdf64;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 140px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.box hr {
+  margin: 25px 170px 10px 10px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid #727272;
+}
+section .main {
+  margin: 0px 10px 80px -190px;
+  padding: 32px;
+  width: 670px;
+  height: 60px;
+  background: #121212;
+  border-radius: 10px;
+}
+
+section .main h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 48px 0;
+  font-size: 48px;
+}
+
+section .main .account-connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section .main .account-connect button {
+  width: 324px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px;
+  outline: none;
+  margin: 3px 0;
+  border-radius: 500px;
+  color: #e8e8e8;
+  background: transparent;
+  font-size: 1rem;
+  border: 1px solid #878787;
+  font-weight: bold;
+}
+section .main .account-connect button:hover {
+  cursor: pointer;
+}
+
+section .main .account-connect button:hover {
+  border-color: #cecece;
+}
+
+section .main .account-connect button img {
+  width: 23px;
+  float: left;
+  margin: 0 10px;
+}
+
+section .main .account-connect button span {
+  position: relative;
+  top: 3px;
+}
+
+section .main hr {
+  margin: 32px 100px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid rgb(41, 41, 41);
+}
+.box2 {
+  background-color: #121212;
+  margin-left: 9px;
+}
+.box2 h4 {
+  color: #727272;
+  font-size: 15px;
+  margin-left: 26px;
+  text-decoration: none;
+}
+.box2 .log-in {
+  color: #cecece;
+}
+
+.box2 h6 {
+  color: #727272;
+  font-size: 12px;
+  /* padding: -30px; */
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+.box2 p {
+  color: #727272;
+  font-size: 12px;
+  margin-left: 49px;
+  margin-top: 4px;
+}
+.box2 p a {
+  color: #727272;
+}
+
+.box2 a:hover {
+  color: #1ed760;
+}
+
+.container {
+  margin-left: 280px;
+}

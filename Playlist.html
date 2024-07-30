@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist-1</title>
+
+    <link rel="stylesheet" href="Playlist.css" />
+    <link
+      rel="shortcut icon"
+      href="Spotify Images/Spotify_favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/133894c736.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="Spotify Images/Spotify Logo.png" alt="Spotify" />
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="Main.html"
+              ><span class="fa fa-home"></span> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa fa-search"></span> <span>Search</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa fas fa-book"></span>
+              <span>Your Library </span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href=""
+              ><span class="fa fas fa-music"></span>
+              <span>Create Playlist </span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa fas fa-thumbs-up"></span>
+              <span>Liked Songs</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li><a href="">Cookies</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+          <button
+            type="button"
+            class="fa-solid fa-circle-half-stroke"
+            onclick="toggleMode()"
+          ></button>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="Signup.html">Sign Up</a>
+            </li>
+          </ul>
+          <a href="Login.html"><button type="button">Log In</button></a>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+      <div class="playlist-content">
+        <div class="playlist-cover">
+          <img src="assets/Punjabi 101.jpg" alt="" />
+        </div>
+        <div class="playlist-info">
+          <div class="playlist-public">PUBLIC PLAYLIST</div>
+          <div class="playlist-title">Punjabi 101</div>
+          <div class="playlist-description">
+            All new soundtracks from your Favourite artists!
+          </div>
+          <div style="height: 10px"></div>
+          <div class="playlist-stats">
+            <img
+              src="assets/spotify-logo.png"
+              width="24px"
+              height="24px"
+              alt=""
+            />
+            <span> Spotify ·</span>
+            <span>5,131,321 likes · </span>
+            <span>100 songs, </span>
+            <span>6 hr 57 min </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="playlist-songs-container">
+        <div class="playlist-buttons">
+          <div class="playlist-buttons-left">
+            <div class="playlist-buttons-resume-pause">
+              <img src="assets/Pause.svg" alt="" />
+            </div>
+            <div class="playlist-buttons-like">
+              <img src="assets/FiiledLike.svg" alt="" class="spotify-color" />
+            </div>
+            <div class="playlist-buttons-download">
+              <img src="assets/Download.svg" alt="" />
+            </div>
+            <div class="playlist-buttons-three-dot">
+              <img src="assets/ThreeDots.svg" alt="" />
+            </div>
+          </div>
+          <div class="playlist-buttons-right">
+            <div class="playlist-buttons-search">
+              <img src="assets/Search.svg" alt="" />
+            </div>
+            <div class="playlist-buttons-order">Custom Order</div>
+          </div>
+        </div>
+
+        <div class="playlist-songs">
+          <table>
+            <tr>
+              <th>#</th>
+              <th>TITLE</th>
+              <th>ALBUM</th>
+              <th>DATE ADDED</th>
+              <th>
+                <img src="assets/Duration.svg" alt="" />
+              </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td class="song-title">
+                <div class="song-image">
+                  <img src="assets/Punjabi 101.jpg" alt="" />
+                </div>
+                <div class="song-name-album">
+                  <div class="song-name">Showstopper</div>
+                  <div class="song-artist">Jerry</div>
+                </div>
+              </td>
+              <td class="song-album">Showstopper</td>
+              <td class="song-date-added">May 31, 2022</td>
+              <td class="song-duration">3:26</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td class="song-title">
+                <div class="song-image">
+                  <img src="assets/Punjabi 101.jpg" alt="" />
+                </div>
+                <div class="song-name-album">
+                  <div class="song-name">Devil</div>
+                  <div class="song-artist">Sidhu Moose Wala</div>
+                </div>
+              </td>
+              <td class="song-album">PBX1</td>
+              <td class="song-date-added">June 3, 2019</td>
+              <td class="song-duration">2:16</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="song-title">
+                <div class="song-image">
+                  <img src="assets/Punjabi 101.jpg" alt="" />
+                </div>
+                <div class="song-name-album">
+                  <div class="song-name">Hot Shit</div>
+                  <div class="song-artist">Arjan Dhillon</div>
+                </div>
+              </td>
+              <td class="song-album">Chobbar</td>
+              <td class="song-date-added">February 9, 2024</td>
+              <td class="song-duration">3:38</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="song-title">
+                <div class="song-image">
+                  <img src="assets/Punjabi 101.jpg" alt="" />
+                </div>
+                <div class="song-name-album">
+                  <div class="song-name">Ruthless</div>
+                  <div class="song-artist">Shubh</div>
+                </div>
+              </td>
+              <td class="song-album">Still Rollin</td>
+              <td class="song-date-added">June 3, 2023</td>
+              <td class="song-duration">2:13</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td class="song-title">
+                <div class="song-image">
+                  <img src="assets/Punjabi 101.jpg" alt="" />
+                </div>
+                <div class="song-name-album">
+                  <div class="song-name">Try Me</div>
+                  <div class="song-artist">Karan Aujla</div>
+                </div>
+              </td>
+              <td class="song-album">Making Memories</td>
+              <td class="song-date-added">June 4, 2023</td>
+              <td class="song-duration">2:15</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+    </div>
+
+    <script>
+      function toggleMode() {
+        document.body.classList.toggle("dark");
+      }
+    </script>
+  </body>
+</html>

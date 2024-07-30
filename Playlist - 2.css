@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dark {
+  background-color: white;
+  filter: invert(1) hue-rotate(180deg);
+}
+.dark img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 300px;
+  background-color: black;
+  padding: 24px;
+}
+
+.sidebar .logo img {
+  width: 130px;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.sidebar .navigation ul li {
+  padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sidebar .navigation ul li a:hover {
+  color: #ffffff;
+}
+
+.sidebar .navigation ul li .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar .policies {
+  position: absolute;
+  bottom: 100px;
+}
+
+.sidebar .policies ul {
+  list-style: none;
+}
+
+.sidebar .policies ul li {
+  padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+.sidebar .policies ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.main-container {
+  margin-left: 350px;
+  margin-bottom: 100px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 14px 30px;
+}
+
+.prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.topbar .navbar button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.topbar .navbar button:hover {
+  background-color: #f2f2f2;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.playlist-content {
+  background: linear-gradient(#ac640b, #000);
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.playlist-cover img {
+  width: 250px;
+  height: 250px;
+  box-shadow: #898989;
+  margin: 10px 10px;
+}
+
+.playlist-info {
+  color: white;
+  padding-left: 20px;
+}
+
+.playlist-public {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "AvenirLTStd-Black";
+}
+
+.playlist-title {
+  font-size: 86px;
+  font-weight: 1000;
+  font-family: "AvenirLTStd-Black";
+}
+
+.playlist-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #b5b5b5;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: "AvenirLTStd-Black";
+}
+
+.playlist-buttons-left,
+.playlist-buttons-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist-buttons-resume-pause {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-songs-container {
+  height: 1000px;
+  padding: 20px;
+  background-color: #121212;
+}
+
+.playlist-buttons-download,
+.playlist-buttons-three-dot,
+.playlist-buttons-like {
+  margin-left: 20px;
+}
+
+.playlist-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-buttons-order {
+  color: #cacaca;
+  padding-left: 20px;
+}
+
+.playlist-songs {
+  margin-top: 20px;
+}
+
+.playlist-songs table {
+  border-collapse: collapse; /*dekhna hai */
+  width: 100%;
+}
+
+.playlist-songs table tr td,
+.playlist-songs table tr th {
+  padding: 10px;
+  color: #cacaca;
+}
+
+.playlist-songs table tr th {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.playlist-songs table tr:first-of-type {
+  border-bottom: 1px solid #cacaca;
+}
+
+.playlist-songs table th {
+  text-align: left;
+}
+
+.song-image img {
+  width: 34px;
+  height: 34px;
+}
+
+.song-title {
+  display: flex;
+}
+
+.song-name-album {
+  padding-left: 15px;
+}
+
+.song-name {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+.song-artist,
+.song-album,
+.song-date-added,
+.song-duration {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #898989;
+}

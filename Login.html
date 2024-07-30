@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in to Spotify</title>
+    <link rel="stylesheet" href="Login.css" />
+    <link
+      rel="shortcut icon"
+      href="Spotify Images/Spotify_favicon.png"
+      type="image/x-icon"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/133894c736.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="Main.html"
+          ><img src="Spotify Images/Spotify Logo.png" alt="Spotify"
+        /></a>
+      </div>
+      <div class="light">
+        <button
+          type="button"
+          class="fa-solid fa-circle-half-stroke"
+          onclick="toggleMode()"
+        ></button>
+      </div>
+    </header>
+
+    <section>
+      <div class="main">
+        <h1>Log in to Spotify</h1>
+        <div class="account-connect">
+          <button class="a-c-btn" id="g">
+            <img src="img/google.png" /><span>Continue with Google</span>
+          </button>
+          <button class="a-c-btn" id="f">
+            <img src="img/facebook.png" /><span>Continue with Facebook</span>
+          </button>
+          <button class="a-c-btn" id="a">
+            <img src="img/apple.png" /><span>Continue with Apple</span>
+          </button>
+          <button class="a-c-btn" id="p">
+            <span>Continue with phone number</span>
+          </button>
+        </div>
+        <hr />
+
+        <div class="log-in">
+          <form>
+            <label>Email or username</label>
+            <input type="text" placeholder="Email or username" id="username" />
+            <label>Password</label>
+            <div class="showhide">
+              <input type="password" placeholder="Password" id="password" />
+              <img src="img/visibility-off-3.png" id="eyeicon" />
+            </div>
+
+            <button type="button" onclick="login()">Log In</button>
+            <a href="#">Forgot your password?</a>
+          </form>
+        </div>
+        <hr />
+
+        <div class="last">
+          <span>Don't have an account?</span>
+          <a href="Signup.html">Sign up for Spotify</a>
+        </div>
+      </div>
+    </section>
+    <script src="Login.js"></script>
+  </body>
+</html>
